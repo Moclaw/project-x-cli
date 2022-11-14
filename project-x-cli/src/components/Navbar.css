@@ -1,0 +1,145 @@
+@import "~antd/dist/antd.css";
+
+.menuBar {
+	border-bottom: solid 1px #e8e8e8;
+	overflow: auto;
+	box-shadow: 0 0 30px #f3f1f1;
+	display: flex;
+}
+
+.logo a {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.logo img {
+	width: 10%;
+	margin-left: 15em;
+}
+
+.menuCon {
+	width: calc(100% - 150px);
+	float: left;
+}
+
+.menuCon .ant-menu-item {
+	padding: 0px 10px;
+}
+
+.menuCon .ant-menu-submenu-title {
+	padding: 10px 20px;
+}
+
+.menuCon .ant-menu-item a,
+.menuCon .ant-menu-submenu-title a {
+	padding: 10px 15px;
+}
+
+.menuCon .ant-menu-horizontal {
+	border-bottom: none;
+}
+
+.menuCon .leftMenu {
+	justify-content: center;
+}
+
+.menu-item {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 10px;
+}
+
+.menuCon .rightMenu {
+	justify-content: end;
+}
+
+.barsMenu {
+	float: right;
+	height: 32px;
+	padding: 6px;
+	margin-top: 8px;
+	display: none;
+	background: none;
+}
+
+.barsBtn {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #1890ff;
+	position: relative;
+}
+
+.barsBtn:after,
+.barsBtn:before {
+	content: attr(x);
+	width: 20px;
+	position: absolute;
+	top: -6px;
+	left: 0;
+	height: 2px;
+	background: #1890ff;
+}
+
+.barsBtn:after {
+	top: auto;
+	bottom: -6px;
+}
+
+.ant-drawer-body {
+	padding: 0;
+}
+
+.barsMenu>span {
+	display: block;
+}
+
+.ant-drawer-body .ant-menu-horizontal>.ant-menu-item,
+.ant-drawer-body .ant-menu-horizontal>.ant-menu-submenu {
+	display: inline-block;
+	width: 100%;
+}
+
+.ant-drawer-body .ant-menu-horizontal {
+	border-bottom: none;
+}
+
+.ant-drawer-body .ant-menu-horizontal>.ant-menu-item:hover {
+	border-bottom-color: transparent;
+}
+
+@media (max-width: 767px) {
+	.barsMenu {
+		display: inline-block;
+	}
+
+	.leftMenu,
+	.rightMenu {
+		display: none;
+	}
+
+	.menuCon {
+		margin-top: 0;
+	}
+
+	.menuCon .ant-menu-item,
+	.menuCon .ant-menu-submenu-title {
+		padding: 1px 20px;
+	}
+
+	.logo a {
+		padding: 10px 20px;
+		margin-bottom: 3px;
+	}
+
+	.logo img {
+		margin-top: 10px;
+		margin-left: auto;
+		width: 15%;
+	}
+
+	button {
+		margin-bottom: 12px;
+		margin-right: 14px;
+	}
+}
