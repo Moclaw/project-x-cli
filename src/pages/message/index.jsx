@@ -23,10 +23,6 @@ const MessageItem = (message) => {
 	);
 }
 
-
-
-
-
 const InputMessage = () => {
 	const [text, setText] = React.useState("");
 	const handleSendMessage = (text) => {
@@ -57,6 +53,7 @@ const Text = () => {
 }
 
 function Message() {
+	// eslint-disable-next-line no-unused-vars
 	const [listmessages, setListMessages] = React.useState([
 		// {
 		// 	id: 1,
@@ -83,6 +80,7 @@ function Message() {
 			<div className="messages-list">
 
 				{isMessage ? listmessages.map((message) => (
+					// eslint-disable-next-line react/jsx-key
 					<MessageItem
 						message={message}
 						{...message}
